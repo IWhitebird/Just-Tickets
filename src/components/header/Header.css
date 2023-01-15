@@ -24,9 +24,8 @@ a > span:hover {
 }
 
 .header__icon {
-    width: 130px;
+    width: 80px;
     cursor: pointer;
-    filter: invert(100%);
 }
 
 .user__avatar {
