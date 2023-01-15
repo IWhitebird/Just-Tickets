@@ -11,9 +11,9 @@ const Header = () => {
                 <Link to="/movies/top_rated" style={{textDecoration: "none"}}><span>TOP RATED</span></Link>
                 <Link to="/movies/upcoming" style={{textDecoration: "none"}}><span>UPCOMING</span></Link>
             </div>
-            <div className="login-box">
-			<a href="#" className="social-button" id="facebook-connect"> <span>LOGIN</span></a></div>
-
+            <div className="login-button">
+			<a href="#" className="social-button" id="facebook-connect"> <span>LOGIN</span></a>
+            </div>
         </div>
     )
 }
