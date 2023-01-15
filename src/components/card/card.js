@@ -13,7 +13,7 @@ const Cards = ({movie}) => {
         }, 1500)
     }, []) 
 
-    return <>
+    return (<>
     {
         isLoading
         ?
@@ -37,7 +37,7 @@ const Cards = ({movie}) => {
             </div>
         </Link>
     }
-    </>
+    </>)
 }
 
 export default Cards

@@ -1,11 +1,16 @@
 .posterImage{
+
     height: 600px;
 }
 
 .posterImage > img {
     margin: auto;
     display: block;
-    width: 100%;
+    width: 100%;    
+    transition: all 0.5s; 
+    transition-delay: 1s;
+    transition-duration: 1s;
+    
 }
 
 .posterImage__overlay {
