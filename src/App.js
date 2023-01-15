@@ -5,12 +5,13 @@ import Home from './pages/home/home';
 import MovieList from './components/movieList/movieList';
 import Movie from './pages/movieDetail/movie';
 import Footer from './components/Footer/Footer';
+import Login from './pages/login/login'
 
 function App() {
   return (
     <div className="App">
         <Router>
-
+        <Login />
           <Header />
             <Routes>
                 <Route index element={<Home />}></Route>
