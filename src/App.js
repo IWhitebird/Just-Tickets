@@ -10,6 +10,8 @@ import Login from './pages/login/login'
 function App() {
   return (
     <div className="App">
+      <div className="page-container">
+        <div className="content-wrapper">
         <Router>
           <Header />
             <Routes>
@@ -20,6 +22,8 @@ function App() {
             </Routes> 
             <Footer />
         </Router>
+        </div>
+        </div>
     </div>
   );
 }

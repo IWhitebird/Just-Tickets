@@ -2,9 +2,10 @@
   .login-box {
     position: relative;
     left: 43%;
-    width: 400px;
-    background: rgba(0, 0, 0, 0.5);
-    margin-bottom: 68px;
+    width: 361px;
+    background: rgb(0 0 0 / 50%);
+    margin-bottom: 299px;
+    margin-top: 200px;
 }
   
   .login-box h2 {
@@ -34,14 +35,19 @@
     top:0;
     left: 0;
     padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
+    font-size: 14px;
+    color: #03e9f4;
     pointer-events: none;
     transition: .5s;
   }
-  
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
+  .login-box .user-box input:hover{
+    border-bottom: 1px solid #03e9f4;
+    transition: all 0.6s ease;
+  }
+  .login-box .user-box input:focus{
+    border-bottom: 1px solid #03e9f4;
+  }
+  .login-box .user-box input:focus ~ label {
     top: -20px;
     left: 0;
     color: #03e9f4;
