@@ -17,6 +17,8 @@ const Login = () => {
     <a href="#">
       <span></span>
       <span></span>
+      <span></span>
+      <span></span>
       Submit
     </a>
   </form>
