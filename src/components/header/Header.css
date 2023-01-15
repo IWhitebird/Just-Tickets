@@ -9,7 +9,6 @@
 .headerLeft, .headerRight {
     display: flex;
     align-items: center;
-
 }
 
 a > span{
@@ -17,15 +16,18 @@ a > span{
     font-size: 1.3rem;
     cursor: pointer;
     color: white;
+    transition: all 0.3s ease;
 }
 
 a > span:hover {
     color: red;
+    font-size: 1.35rem;
 }
 
 .header__icon {
-    width: 80px;
+    width: 150px;
     cursor: pointer;
+    filter: invert(100%);
 }
 
 .user__avatar {
