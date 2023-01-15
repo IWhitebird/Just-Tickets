@@ -7,11 +7,11 @@ const Login = () => {
   <h2>LOGIN</h2>
   <form>
     <div className="user-box">
-      <input type="text" name="" required=""/>
+      <input type="text" />
       <label>Username</label>
     </div>
     <div className="user-box">
-      <input type="password" name="" required=""/>
+      <input type="text" />
       <label>Password</label>
     </div>
     <a href="#">
