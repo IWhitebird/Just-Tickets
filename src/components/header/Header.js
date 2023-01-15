@@ -12,7 +12,7 @@ const Header = () => {
                 <Link to="/movies/upcoming" style={{textDecoration: "none"}}><span>UPCOMING</span></Link>
             </div>
             <div className="login-button">
-			<a href="#" className="social-button" id="facebook-connect"> <span>LOGIN</span></a>
+			<Link to="/pages/login" className="social-button" id="facebook-connect"> <span>LOGIN</span></Link>
             </div>
         </div>
     )
