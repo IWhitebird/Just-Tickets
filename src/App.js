@@ -12,12 +12,12 @@ function App() {
     <div className="App">
         <Router>
           <Header />
-          <Login />
             <Routes>
                 <Route index element={<Home />}></Route>
                 <Route path="movie/:id" element={<Movie />}></Route>
                 <Route path="movies/:type" element={<MovieList />}></Route>
             </Routes> 
+            <Login />
             <Footer />
         </Router>
     </div>
