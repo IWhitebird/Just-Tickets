@@ -1,62 +1,66 @@
-import express from "express";
-import cors from "cors";
-import mongoose from "mongoose";
-import User from "../backend/models/userschema.js"
+import express from "express"
+import cors from "cors"
+import mongoose from "mongoose"
 
-const app = express();
+const app = express()
 app.use(express.json())
 app.use(express.urlencoded())
 app.use(cors())
 
-mongoose.connect("mongodb://localhost:27017",{
-    newUrlParser:true,
-    useUnifiedTopology:true
+mongoose.connect("mongodb://localhost:27017/just-tickets", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 }, () => {
-    console.log("Database connection established");
+    console.log("DB connected")
 })
 
-/////// ROUTES 
-app.post("/login", (req, res) => {
-    const {email,password}=req.body
-    User.findOne({email:email},(err,user)=>{
+const userSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    password: String
+})
+
+const User = new mongoose.model("User", userSchema)
+
+//Routes
+app.post("/login", (req, res)=> {
+    const { email, password} = req.body
+    User.findOne({ email: email}, (err, user) => {
         if(user){
-            if (password===user.passwd){
-                res.send({message:"Logged in successfully and as",user:user})
+            if(password === user.password ) {
+                res.send({message: "Login Successfull", user: user})
+            } else {
+                res.send({ message: "Password didn't match"})
             }
-            else{
-                res.send({message:"Invalid credentials"})
-            }
-        }else{
-            res.send("User not found")
+        } else {
+            res.send({message: "User not registered"})
         }
-})
-})
-app.post("/signup", (req, res) => {
-    const {uname,email,password,repassword}=req.body
-    User.findOne({email:email},(err,user)=>{
+    })
+}) 
+
+app.post("/signup", (req, res)=> {
+    const { name, email, password} = req.body
+    User.findOne({email: email}, (err, user) => {
         if(user){
-            res.send({message:"User already exists"})
-        }else{
+            res.send({message: "User already registerd"})
+        } else {
             const user = new User({
-                uname:uname,
-                email:email,
-                password:password,
+                name,
+                email,
+                password
             })
             user.save(err => {
-                console.log(user)
                 if(err) {
                     res.send(err)
-                }
-                else{
-                    console.log(user)
-                    alert("reg success",user)
-                    console.log('user reg')
+                } else {
+                    res.send( { message: "Successfully Registered, Please login now." })
                 }
             })
         }
     })
-})
+    
+}) 
 
-app.listen(8000,() => {
-    console.log("Server is up and listening on port 8000")
+app.listen(5000,() => {
+    console.log("BE started at port 5000")
 })

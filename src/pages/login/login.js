@@ -5,22 +5,25 @@ import axios from "axios"
 
 const Login = () => {
 
-  const [user,setUser]= React.useState({
-    email:"",
-    password:"",
- })
-  const handleChange = e =>{
-    const {name,value} = e.target
-    setUser({
-      ...user,
-      [name]:value
-    })
-  }
-  const login =()=>{
-    axios.post("http://localhost:8000/login",user)
-    .then(response =>console.log('login success'))
+  const [ user, setUser] = React.useState({
+      email:"",
+      password:""
+  })
+
+  const handleChange = e => {
+      const { name, value } = e.target
+      setUser({
+          ...user,
+          [name]: value
+      })
   }
 
+  const login = () => {
+      axios.post("http://localhost:9002/login", user)
+      .then(res => {
+          alert(res.data.message)
+      })
+  }
 
 
   return (
