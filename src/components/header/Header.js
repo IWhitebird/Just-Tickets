@@ -13,7 +13,7 @@ const Header = () => {
             </div>
             <div className="headerRight">
             <div className="login-button">
-			<Link to="/pages/login" className="social-button" id="facebook-connect"> <span>LOGIN</span></Link>
+			<Link to="/pages/login" className="social-button" id="facebook-connect"> <span>SIGNIN</span></Link>
             </div>
             <div className="signup-button">
             <Link to="/pages/signup" className="social-button" id="facebook-connect"> <span>SIGNUP</span></Link>

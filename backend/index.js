@@ -46,8 +46,10 @@ app.post("/signup", (req, res) => {
                 console.log(user)
                 if(err) {
                     res.send(err)
-                }else{
-                    res.send({message:"Regsitration Succeeded",user})
+                }
+                else{
+                    console.log(user)
+                    alert("reg success",user)
                     console.log('user reg')
                 }
             })
