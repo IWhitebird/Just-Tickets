@@ -21,9 +21,10 @@ const Home = () => {
                 <Carousel
                     showThumbs={false}
                     autoPlay={true}
+                    interval={5000}
                     infiniteLoop={true}
                     showStatus={false}
-                    transitionTime={1000} 
+                    transitionTime={900} 
                 > 
                     {
                         popularMovies.map(movie => (

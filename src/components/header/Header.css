@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
 }
-
 a > span{
     margin: 0 30px;
     font-size: 1.3rem;
@@ -35,6 +34,7 @@ a > span:hover {
 }
 .login-button {
     text-align: center;
+    margin-right: 10px;
 }
 
 .login-button:hover {
@@ -42,6 +42,20 @@ a > span:hover {
 }
 
 .login-button h2 {
+    margin: 20px 0 20px;
+    padding: 0;
+    text-transform: uppercase;
+    color: #4688F1;
+}
+.signup-button {
+    text-align: center;
+}
+
+.signup-button:hover {
+	  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.signup-button h2 {
     margin: 20px 0 20px;
     padding: 0;
     text-transform: uppercase;

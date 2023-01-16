@@ -1,25 +1,25 @@
 
-  .login-box {
+  .signup-box {
     position: relative;
-    left: 40%;
+    left: 43%;
     width: 361px;
     background: rgb(0 0 0 / 50%);
     margin-bottom: 299px;
     margin-top: 200px;
 }
   
-  .login-box h2 {
+  .signup-box h2 {
     margin: 0 0 30px;
     padding: 0;
     color: #fff;
     text-align: center;
   }
   
-  .login-box .user-box {
+  .signup-box .user-box-signup {
     position: relative;
   }
   
-  .login-box .user-box input {
+  .signup-box .user-box-signup input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -30,7 +30,7 @@
     outline: none;
     background: transparent;
   }
-  .login-box .user-box label {
+  .signup-box .user-box-signup label {
     position: absolute;
     top:0;
     left: 0;
@@ -40,24 +40,24 @@
     pointer-events: none;
     transition: .5s;
   }
-  .login-box .user-box input:hover{
+  .signup-box .user-box-signup input:hover{
     border-bottom: 1px solid #03e9f4;
     transition: all 0.6s ease;
   }
-  .login-box .user-box input:focus{
+  .signup-box .user-box-signup input:focus{
     border-bottom: 1px solid #03e9f4;
   }
-  .login-box .user-box input:focus ~ label, 
-  .login-box .user-box input:valid ~ label {
+  .signup-box .user-box-signup input:focus ~ label, 
+  .signup-box .user-box-signup input:valid ~ label {
     top: -20px;
     left: 0;
     color: #03e9f4;
     font-size: 12px;
   }
-  .login-box form a {
+  .signup-box form a {
     position: relative;
     display: inline-block;
-    padding: 10px 51px;    
+    padding: 10px 25px;
     color: #03e9f4;
     font-size: 16px;
     text-decoration: none;
@@ -68,7 +68,7 @@
     letter-spacing: 4px
   }
   
-  .login-box a:hover {
+  .signup-box a:hover {
     background: #03e9f4;
     color: #fff;
     border-radius: 5px;
@@ -78,12 +78,12 @@
                 0 0 100px #03e9f4;
   }
   
-  .login-box a span {
+  .signup-box a span {
     position: absolute;
     display: block;
   }
   
-  .login-box a span:nth-child(1) {
+  .signup-box a span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -101,7 +101,7 @@
     }
   }
   
-  .login-box a span:nth-child(2) {
+  .signup-box a span:nth-child(2) {
     top: -100%;
     right: -30px;
     width: 2px;
@@ -120,7 +120,7 @@
     }
   }
   
-  .login-box a span:nth-child(3) {
+  .signup-box a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -139,7 +139,7 @@
     }
   }
   
-  .login-box a span:nth-child(4) {
+  .signup-box a span:nth-child(4) {
     bottom: -100%;
     left: -30px;
     width: 2px;

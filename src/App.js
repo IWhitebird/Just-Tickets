@@ -6,6 +6,7 @@ import MovieList from './components/movieList/movieList';
 import Movie from './pages/movieDetail/movie';
 import Footer from './components/Footer/Footer';
 import Login from './pages/login/login'
+import Signup from './pages/signup/signup';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path="movie/:id" element={<Movie />}></Route>
                 <Route path="movies/:type" element={<MovieList />}></Route>
                 <Route path="/pages/login" element={<Login />}></Route>
+                <Route path="/pages/signup" element={<Signup />}></Route>
             </Routes> 
             <Footer />
         </Router>
